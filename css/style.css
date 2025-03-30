@@ -198,7 +198,6 @@ h5 {
 
 button:hover {
     animation: grow 0.3s forwards;
-    color: #1E1D4C;
 }
 
 @keyframes grow {
@@ -320,7 +319,7 @@ button:hover {
     color: #1E1D4C;
 }
 
-.carte_compo {
+.carte_menu {
     font-family: 'poppins-regular';
     font-size: 16px;
     line-height: 26px;
@@ -417,6 +416,7 @@ button:hover {
 
 .illustration img {
     width: 28vw;
+    z-index: 1;    
 }
 
 
@@ -440,7 +440,7 @@ section #part-3 {
 #part-4 {
     background: url("../img/images/illustration_commander.jpg") no-repeat;
     background-size: cover;
-    z-index: -1;
+
 }
 
 #part-4 h4 {
@@ -502,7 +502,7 @@ section .box_commande {
 }
 
 
-.texte_gras2 {
+.texte_gras2, .texte_gras2 a {
     font-family: 'poppins-bold';
     font-size: 16px;
     font-weight: 700;
@@ -754,7 +754,7 @@ p a {
     background-color: #080809;
     padding: 13px 12px 10px;
     gap: 5px;
-    margin-right: 5px;
+    margin-right: 8px;
 }
 
 .apple {
@@ -888,9 +888,9 @@ p a {
 
     .box_nouveautes {
         position: relative;
-        overflow: hidden;
+
         width: 340px;
-        height: 440px;
+
 
     }
 
@@ -898,9 +898,7 @@ p a {
         width: 300px;
     }
 
-
-
-
+    
     #box-nouveautes .nouveautes:nth-child(1) {
         animation: animation-carte-1 19.5s 0s infinite;
     }
@@ -1004,10 +1002,55 @@ p a {
     }
 
 
+
+
+
+
     .box_carte {
+        display: flex;        
+        justify-content: none;
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .carte figure img {
+        float: left;
+    }
+
+    
+    .texte_gras {
+        font-family: 'opensans-regular';
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 600;
+        color: #1E1D4C;
+    }
+    
+    .carte_menu {
+        display: flex;
+    }
+    
+    .carte {
+        justify-content: none;
         display: flex;
         flex-direction: column;
+        width: 100%;
+        height: 80px;
+        border-radius: 0;
+        position: relative;
+        margin-bottom: 50px;
     }
+    
+    .carte:hover {
+        display: none;
+
+    }
+    
+    
+    .rotation img{
+        display: none;
+    }
+
 
 
 
@@ -1060,14 +1103,14 @@ p a {
         position: relative;
     }
 
-    .illustration img {
-        width: 100%;
-    }
-
     #illustration_chef {
         display: grid;
     }
 
+    .illustration img {
+        width: 100%;
+        z-index: unset;
+    }
 
     section #part-3 {
         padding-top: 6%;

@@ -20,6 +20,12 @@
 
 
 @font-face {
+    font-family: 'poppins-extralight';
+    src: url('../fonts/Poppins/Poppins-ExtraLight.ttf') format('woff2'),
+         url('../fonts/Poppins/Poppins-ExtraLight.ttf') format('woff');
+}
+
+@font-face {
     font-family: 'volkhov-regular';
     src: url('../fonts/Volkhov/Volkhov-Regular.ttf') format('woff2'),
          url('../fonts/Volkhov/Volkhov-Regular.ttf') format('woff');
