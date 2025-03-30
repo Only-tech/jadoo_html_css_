@@ -10,54 +10,58 @@
 <body>
     <main>
     <header>
-        <a href="index.html" class="logo">
+        <div class="for_cell">
+            <a href="contactez_nous">Contact</a>
+        </div>
+        <div class="logo">
             <img title="Jadoo, un voyage culinaire gourmet et gourmand" src="img/images/logo_jadoo_1.svg" alt="Jadoo" height="30px">
             <img title="Jadoo, un voyage culinaire gourmet et gourmand" src="img/images/logo_jadoo_2.svg" alt="Jadoo" height="30px">
-        </a>
+        </div>
         <nav>
+            <div class="burger">
+                <img src="img/images/burger_icon.svg" alt="Menu">
+            </div>
             <ul>
                <li><a href="les_nouveautes.html">Les nouveautés</a></li>  
                <li><a href="decouvrir.html">Découvrir</a></li>
-               <li><a href="Commander.html">Commander</a></li>
-               <li><a href="#contactez_nous">Contactez-nous</a></li>
+               <li><a href="commander.html">Commander</a></li>
+               <li class="for_web"><a href="contactez_nous">Contactez-nous</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="part-1">
-        <article>
+        <div>
             <h3 class="texte_orange">UN VOYAGE CULINAIRE GOURMET ET GOURMAND</h3>
             <h1 class="texte_souligne_rose">Bienvenue<br> au restaurant<br> Jadoo</h1>
             <h5 class="texte_gris">Jadoo vous accueille dans son ambiance zen et épurée, idéale pour découvrir ou redécouvrir la cuisine gastronomique du Chef Junichi IIDA.</h5>
             <button class="bouton_jaune">Découvrir la carte</button>
-        </article>
+        </div>
     </section>
 
 
     <section id="part-2">
-        <div class="deco">
-            <img src="img/images/decor_1.svg" alt="">
-        </div>
+    
         <div class="titre-2">
-        <h4>Découvrez</h4>
-        <h2>Les nouveautés Jadoo</h2>
+            <h4>Découvrez</h4>
+            <h2>Les nouveautés Jadoo</h2>
         </div>
-        <div class="box_nouveautes" id="deco-filet">
+        <div class="box_nouveautes">
             <article class="nouveautes">
                 <figure>
-                    <img title="" src="img/images/plat_1.png">
+                    <img src="img/images/plat_1.png" alt="">
                     <figcaption>Boulettes de poulet<br> au gingembre sauce<br> sucrée salée "Tsukuné"</figcaption>
                 </figure>
             </article>
             <article class="nouveautes">    
                 <figure>
-                    <img title="" src="img/images/plat_2.png">  
+                    <img src="img/images/plat_2.png" alt="">  
                     <figcaption>Nouilles japonaises chaudes à base de farine de blé "Udon"</figcaption>
                 </figure>
             </article>
             <article class="nouveautes">
                 <figure>
-                    <img title="" src="img/images/plat_3.png">
+                    <img src="img/images/plat_3.png" alt="">
                     <figcaption>Échine de porc panée<br> à la japonaise<br> "Tonkatsu-Teishoku"</figcaption>
                 </figure>
             </article>
@@ -82,7 +86,7 @@
                     <div class="rotation">
                         <img title="" src="img/images/decoration_rose.svg">
                     </div>
-                    </figure>
+                </figure>
             </article>
             <article class="carte">
                 <figure>
@@ -110,18 +114,23 @@
 
 
     <section id="part-3">
-        <h1 class="texte-souligne-rose">Un voyage <br>gastronomique <br>entre le Japon <br>et la France...</h1>
-        <h5>Passé par des maisons étoilées en France, le cuisinier<br> japonais s'est forgé une solide expérience dans <br>l'Hexagone : aujourd'hui franc-comtois d'adoption, il <br>maîtrise aujourd'hui les mélanges de cultures et de <br>saveurs chaque jour au sein de son restaurant <br>gastronomique.</h5>
+        <div class="video">
+            <div class="boutton_play">
+                <img src="img/images/button_play.svg" alt="">
+            </div>
+            <img src="img/images/visu_video.jpg" type="video" alt="Service du chef">
+        </div>
+        <div>
+            <h1 class="texte_souligne_rose_2">Un voyage <br>gastronomique <br>entre le Japon <br>et la France...</h1>
+            <h5>Passé par des maisons étoilées en France, le cuisinier japonais s'est forgé une solide expérience dans 
+                l'Hexagone : aujourd'hui franc-comtois d'adoption, il tisse chaque jour au sein de son restaurant gastronomique 
+                japonais à Paris
+            </h5>
+        </div>    
         <div class="illustration">
-            <figure class="image_illustration">
-                <img title="" src="img/images/wrapper_illustration_1.jpg">
-            </figure>
-            <figure class="chef">
-                <img src="img/images/visu_video.jpg" alt="">
-            </figure>
-            <figure class="image_illustration">
-                <img title="" src="img/images/wrapper_illustration_2.jpg">
-            </figure>
+            <img id="illustration_chef" src="img/images/illustration_chef.jpg" alt="">
+            <img title="" src="img/images/wrapper_illustration_1.jpg" alt="">
+            <img title="" src="img/images/wrapper_illustration_2.jpg" alt="">
         </div>     
     </section>
 
@@ -129,119 +138,97 @@
     <section id="part-4">
         <div class="commandez">
             <h4>RAPIDE ET PRATIQUE</h4>
-            <h2>
-                <span class="texte_saumon">Commandez</span> <br>sur le site Jadoo
-            </h2>
+            <h2><span class="texte_saumon">Commandez</span> <br>sur le site Jadoo</h2>
         </div>
-        <div class="conteneur_commande">
-            <a class="commande" href="#" target="_blank">
-                <figure>
-                    <div class="uber">
-                        <img src="img/images/logo_uberEats.png" alt="UberEats">
-                        <p class="texte_gras2">UberEats</p>
-                        <p class="texte_commande">Commandez tous vos plats depuis UberEats</p>
-                    </div>
-                </figure>
+        <div class="box_commande">
+            <a href="#" target="_blank" alt="UberEats" class="uber">
+                <img src="img/images/logo_uberEats.png" alt="UberEats">
+                <p class="texte_gras2">UberEats</p>
+                <p class="texte_commande">Commandez tous vos plats<br> depuis UberEats</p>
             </a>
-            <a class="commande" href="#" target="_blank">
-                <figure>
-                    <div class="jadoo">
-                        <img src="img/images/logo_jadoo_1.svg" alt="">
-                        <p class="texte_gras2">Jadoo.fr</p>
-                        <p class="texte_commande">Ou commandez en ligne sur le site officiel de Jadoo</p>
-                    </div>
-                </figure>
+            <a href="index.html" alt="Jadoo" class="jadoo">
+                <img src="img/images/logo_jadoo_1.svg" alt="Jadoo">
+                <p class="texte_gras2">Jadoo.fr</p>
+                <p class="texte_commande">Ou commandez en ligne<br> sur le site officiel de Jadoo</p>
             </a>
-            <figure>
-                <div class="transport">
-                    <img src="img/images/logo_transport.png" alt="">
-                    <p class="texte_gras2">Livraison ultra rapide</p>
-                    <p class="texte_commande">Soyez livré en 20 minutes maximum</p>
-                </div>
-            </figure>
-        </div>   
+            <div class="transport">
+                <img src="img/images/logo_transport.png" alt="Transport">
+                <p class="texte_gras2">Livraison ultra rapide</p>
+                <p class="texte_commande">Soyez livré en 20 minutes maximum</p>
+            </div>
+        </div>
         <button class="bouton_jaune">Découvrir la carte</button>
     </section>
 
-
     <section id="part-5">
-        <article>
-            <h4 class="rdv">PRENDRE RENDEZ-VOUS</h4>
-            <h2>Contactez-nous <br><br><br>pour réserver au restaurant</h2>
+        <h4 class="rdv">PRENDRE RENDEZ-VOUS</h4>
+        <h2>Contactez-nous<br><span>réserver au restaurant</span></h2>
             
-            <div class="formulaire">
-                <div class="illustration_2">
-                    <img src="img/images/illustration_formulaire.jpg" alt="">
-                </div> 
-                <div class="titre-contact">
-                    <h4 class="form-contact">Formulaire de contact</h4>
-                    <h5>Remplissez le formulaire ci-dessous <br>pour nous contacter</h5>
+        <div class="box_formulaire">
+            <form class="formulaire"> 
+                <h4><span>Formulaire de contact</span></h4>
+                <h5>Remplissez le formulaire ci-dessous <br>pour nous contacter</h5>  
+                <div class="nom_prenom">
+                    <div>
+                        <label for="nom">Nom </label>
+                        <input type="text" id="name" placeholder="No">
+                    </div>                        
+                    <div>
+                        <label for="prénom">Prénom </label>
+                        <input type="text" id="name" placeholder="Mans">
+                    </div>
                 </div>
-                <form method="action">   
-                    <div class="nom_prenom">
-                        <div class="nom">
-                            <div class="formulaire_champ">
-                                <label for="nom">Nom </label>
-                                <input type="text" id="nom" placeholder="No">
-                            </div>
-                        </div>
-                        <div class="prénom">
-                            <div class="formulaire_champ">
-                                <label for="prénom">Prénom </label>
-                                <input type="text" id="Prénom" placeholder="mans">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="adresse_mail">
-                        <div class="formulaire_champ">
-                            <label for="email">Adresse e-mail<br></label>
-                            <input type="email" id="email" name="email" placeholder="no.mans@laposte.net" required>
-                        </div>
-                    </div>
-                    <div class="message_demande">
-                        <div class="formulaire_champ">
-                            <label for="message">Message<br></label>
-                            <input type="text" id="message" placeholder="no.mans@laposte.net">
-                        </div>
-                    </div>
-                </form> 
+                <div>
+                    <label for="email">Adresse e-mail<br></label>
+                    <input type="email" id="mail" name="email" placeholder="no.mans@laposte.net" required>
+                </div>
+                <div class="message_demande">
+                    <label for="message">Message<br></label>
+                    <input type="text" id="mail" placeholder="Votre message / Votre demande">
+                </div>
                 <button class="envoyer"> <img src="img/images/bouton_formulaire_coche.svg" alt="">  Envoyer</button>
+            </form>
+            <div class="illustration_formulaire"> 
+                <img src="img/images/illustration_formulaire.jpg" alt="">
             </div>
-        </article>
+        </div>
     </section>
+    
     <footer>
         <div>
-            <article>
+            <article class="lastjadoo">
                 <figure>
                     <img class="logo_jadoo" title="Jadoo, un voyage culinaire gourmet et gourmand" src="img/images/logo_jadoo_1.svg" alt="Jadoo" height="50px">
                     <img class="titre_jadoo" title="Jadoo, un voyage culinaire gourmet et gourmand" src="img/images/logo_jadoo_2.svg" alt="Jadoo" height="50px">
                 </figure>
-                <figcaption class="voyage">Un voyage gastronomique entre <br> le Japon et la France</figcaption>
+                <figcaption class="footpolice"><span>Un voyage gastronomique entre <br> le Japon et la France</span></figcaption>
             </article>
-            <article class="contact">
-                <div class="restaurant">
-                    <p class="restaurant">Restaurant</p>
-                    <p><li class="lien"><a href="#">Les nouveautés</a></li></p>
-                    <p><li class="lien"><a href="#">Découvrir</a></li></p>
-                    <p><li class="lien"><a href="#">Commander</a></li></p>
-                </div>
-                <div class="contact_rdv">
-                    <p class="title">Contact</p>
-                    <p class="lien"><a href="#"></a> RDV</p>
-                </div>
+            <article class="footdiscover">
+                <figure>
+                    <h4>Restaurant</h4>
+                    <p class="footpolice"><a href="les_nouveautes.html">Nouveautés</a></p>
+                    <p class="footpolice"><a href="decouvrir.html">Découvrir</a></p>
+                    <p class="footpolice"><a href="commander.html">Commander</a></p>
+                </figure>
+                <figure>
+                    <h4>Contact</h4>
+                    <p class="footpolice"><a href="#">Prendre RDV</a></p>
+                </figure>
             </article>
             <article class="telecharger">
                 <figure>
                     <img class="uber2" src="img/images/logo_uberEats_2.svg" alt="">
                 </figure>
-                <figcaption><p>Télécharger UberEats</p></figcaption>
-                <button class="google"><img src="img/images/logo_google_play.svg">GOOGLE PLAY</button>
-                <button class="apple"><img src="img/images/logo_apple.svg">Apple Store</button>
+                <figcaption>Télécharger UberEats</figcaption>
+                <div>
+                   <button class="google"><img src="img/images/logo_google_play.svg">GOOGLE PLAY</button>
+                   <button class="apple"><img src="img/images/logo_apple.svg">Apple Store</button>
+                </div>
             </article>
         </div>
-        <article>
-            <p class="droits_reserve">Tous droits réservés @jadoo.co</p>
-        </article>
+        <div class="droits">
+            <p >Tous droits réservés @jadoo.co</p>
+        </div>
     </footer>
     </main>
 </body>

@@ -13,6 +13,13 @@
 
 
 @font-face {
+    font-family: 'poppins-semibold';
+    src: url('../fonts/Poppins/Poppins-SemiBold.ttf') format('woff2'),
+         url('../fonts/Poppins/Poppins-SemiBold.ttf') format('woff');
+}
+
+
+@font-face {
     font-family: 'volkhov-regular';
     src: url('../fonts/Volkhov/Volkhov-Regular.ttf') format('woff2'),
          url('../fonts/Volkhov/Volkhov-Regular.ttf') format('woff');
