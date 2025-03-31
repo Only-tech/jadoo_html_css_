@@ -45,6 +45,12 @@
          url('../fonts/Open_Sans/static/OpenSans-Bold.ttf') format('woff');
 }
 
+@font-face {
+    font-family: 'opensans-semibold';
+    src: url('../fonts/Open_Sans/static/OpenSans-SemiBold.ttf') format('woff2'),
+         url('../fonts/Open_Sans/static/OpenSans-SemiBold.ttf') format('woff');
+}
+
 
 @font-face {
     font-family: 'opensans-regular';
