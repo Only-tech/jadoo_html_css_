@@ -466,28 +466,26 @@ section .box_commande {
     width: auto;
     float: left;
     padding: 5px 25px 35px 0;
+    margin-top: -5px;
 }
 
 .transport img {
 
     width: auto;
     float: left;
-    padding: 0px 20px 0 0;
+    padding: 0 20px 0 0;
+    margin-top: -10px;
+    
 }
 
 
-.texte_gras_commande, .texte_gras_commande a {
+.box_commande figcaption p:first-child, .box_commande figcaption p a {
     font-family: 'poppins-bold';
     font-size: 16px;
-    font-weight: 700;
     color: #22232C;
 }
 
-.transport .texte_gras_commande {
-    padding-top: 10px;
-}
-
-.texte_commande {
+.box_commande figcaption p {
     font-family: 'poppins-regular';
     font-size: 16px;
     line-height: 125%;
@@ -835,7 +833,7 @@ p a {
 
     section article h5 {
         margin: auto;
-        padding: auto 0;
+        padding-left: 0;
         width: 100%;
     }
 
@@ -1139,7 +1137,7 @@ p a {
         width: 100%;
     }
 
-    .texte_commande {
+    .box_commande figcaption p {
         font-size: 13px;
     }
 
