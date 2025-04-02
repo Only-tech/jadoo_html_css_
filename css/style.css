@@ -12,6 +12,8 @@ body {
     box-sizing: border-box;
 }
 
+/*..entête de la page, navigation.*/
+
 header {
     display: flex;
     background-color: #fff;
@@ -27,14 +29,13 @@ header {
 
 .logo {
     margin-left: 7%;
-    text-decoration: none;
     padding-top: 10px;
 
 }
 
 
 .logo img:first-child {
-    margin-right: 15px;
+    margin-right: 10px;
     height: 35px;
 }
 
@@ -87,8 +88,7 @@ nav ul li {
 li a {
     position: relative;
     font-family: Arial, sans-serif;
-    font-size: 17px;
-    font-weight: 500;
+    font-size: large;
 }
 
 a {
@@ -96,6 +96,7 @@ a {
     color: #212832;
 }
 
+/*....animation souligne lien...*/
 li a::after {
     content: '';
     position: absolute;
@@ -142,21 +143,22 @@ section {
 #part-1 .texte_souligne_rose {
     background: url("../img/images/souligne_rose.svg") no-repeat;
     background-position: 10px 95%;
-    background-size: calc(12vw + 170px);
+    background-size: calc(12vw + 150px);
 }
 
-
+/*..marges..*/
 section article h5 {
     max-width: 480px;
     padding: calc(3% + 15px) 10px calc(4% + 15px);
 }
 
+/*..polices..*/
 h1 {
     font-family: 'Volkhov-regular', serif;
     font-weight: 700;
     font-style: normal;
     color: white;
-    font-size: calc(3.2vw + 35px);
+    font-size: calc(3vw + 30px);
 
 }
 
@@ -183,6 +185,7 @@ h5 {
 
 }
 
+/*..bouton..*/
 .bouton_jaune {
     font-family: Arial, sans-serif;
     font-weight: 700;
@@ -192,7 +195,7 @@ h5 {
     padding: 20px 25px;
     border-radius: 10px;
     border: 0px;
-    box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 15px 15px rgba(201, 117, 8, 0.15);
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
@@ -214,7 +217,7 @@ button:hover {
 
 /*...partie 2...*/
 
-#part-2 .titre-2 h2 {
+#part-2 h2 {
     font-family: 'Volkhov-regular', serif;
     font-style: normal;
     font-size: 50px;
@@ -229,6 +232,7 @@ button:hover {
 
 }
 
+/*...décoration partie 2...*/
 #part-2 {
     display: block;
     text-align: center;
@@ -249,6 +253,7 @@ button:hover {
     background-position: 100% 80%;
 }
 
+/*...conteneur...*/
 .box_nouveautes {
     display: flex;
     flex-wrap: wrap;
@@ -274,6 +279,7 @@ button:hover {
 
 }
 
+/***polices...*/
 .nouveautes figcaption {
     font-family: 'poppins-regular';
     font-size: 18px;
@@ -402,7 +408,7 @@ section #part-3 {
 #part-3 .texte_souligne_rose {
     background: url("../img/images/souligne_rose.svg") no-repeat;
     background-position: 0% 18%;
-    background-size: calc(14vw + 170px);
+    background-size: calc(14vw + 125px);
 }
 
 
@@ -466,6 +472,7 @@ section .box_commande {
     width: auto;
     float: left;
     padding: 5px 25px 35px 0;
+    margin-top: -5px;
 }
 
 .transport img {
@@ -473,21 +480,18 @@ section .box_commande {
     width: auto;
     float: left;
     padding: 0px 20px 0 0;
+    margin-top: -10px;
 }
 
 
-.texte_gras_commande, .texte_gras_commande a {
+.box_commande figcaption p:first-child, .box_commande figcaption p a {
     font-family: 'poppins-bold';
     font-size: 16px;
     font-weight: 700;
     color: #22232C;
 }
 
-.transport .texte_gras_commande {
-    padding-top: 10px;
-}
-
-.texte_commande {
+.box_commande figcaption p{
     font-family: 'poppins-regular';
     font-size: 16px;
     line-height: 125%;
@@ -502,11 +506,11 @@ section .box_commande {
 #part-5 {
     text-align: center;
     align-items: center;
-    max-width: 1100px;
     margin: auto;
-
+    padding: calc(6% + 20px) 0%;
 }
 
+/*...polices et marges...*/
 #part-5 h4 {
     font-family: 'poppins-semibold';
     font-size: 18px;
@@ -550,7 +554,7 @@ section .box_commande {
 
 .nom_prenom {
     display: flex;
-    gap: 20px
+    gap: 15px
 }
 
 
@@ -562,11 +566,11 @@ label {
 }
 
 #name {
-    width: 188px;
+    width: 165px;
 }
 
 #mail {
-    width: 400px;
+    width: 350px;
 
 }
 
@@ -580,7 +584,7 @@ input {
     border-left: 0;
     border-right: 0;
     border-bottom: 1px solid;
-    margin: 5px 0px 30px 0px;
+    margin: 0px 0px 25px 0px;
     cursor: pointer;
 }
 
@@ -613,8 +617,8 @@ input:focus {
 
 
 .illustration_formulaire {
-    height: 550px;
-    width: 500px;
+    height: 520px;
+    width: 450px;
     float: right;
     display: flex;
 }
@@ -622,8 +626,8 @@ input:focus {
 .illustration_formulaire img {
     text-align: center;
     align-items: center;
-    height: 550px;
-    width: 500px;
+    height: 520px;
+    width: 450px;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
 
@@ -633,8 +637,8 @@ input:focus {
     display: flex;
     text-align: center;
     align-items: center;
-    width: 1000px;
-    height: 550px;
+    width: 900px;
+    height: 520px;
     margin: auto;
     border-radius: 30px;
     box-shadow: 2px 4px 32px 5px rgba(0, 0, 0, 0.09);
@@ -643,9 +647,8 @@ input:focus {
 /*..footer..*/
 
 footer {
-    padding: 4% 11% 2%;
+    padding: 4% 8% 2%;
     background: #F3F3F3;
-
 }
 
 footer div {
@@ -656,7 +659,8 @@ footer div {
 
 .footer_discover {
     display: flex;
-    gap: 60px;
+    gap: calc(3vw + 20px);
+    padding: 0 15px 15px;
 }
 
 .logo_jadoo {
@@ -668,16 +672,19 @@ footer div {
 .titre_jadoo {
     height: 40px;
     width: auto;
-    margin-left: 20px;
+    margin-left: 15px;
     margin-bottom: 5px;
 }
 
-div article h4 {
+.footer_discover h4 {
     font-family: 'poppins-bold';
     font-size: 21px;
     font-weight: 500;
     margin-bottom: 30px;
+}
 
+.footer_logo_jadoo {
+    padding-bottom: 15px;
 }
 
 .footer_police, .footer_police a {
@@ -688,10 +695,6 @@ div article h4 {
     margin-top: 15px;
 }
 
-p a {
-    text-decoration: none;
-    color: #5E6282;
-}
 
 .telecharger figcaption {
     font-family: 'poppins-regular';
@@ -716,17 +719,20 @@ p a {
     width: auto;
 }
 
-.google {
-    font-family: 'poppins-extralight';
-    color: #BFC0CD;
-    font-size: 10px;
+.google, .apple {
     display: flex;
     align-items: center;
     border-radius: 50px;
     border: 0;
-    background-color: #080809;
-    padding: 13px 12px 10px;
+    background-color: #080809;   
     gap: 5px;
+}
+
+.google {
+    font-family: 'poppins-extralight';
+    color: #BFC0CD;
+    font-size: 10px;
+    padding: 13px 12px 10px;
     margin-right: 8px;
 }
 
@@ -734,14 +740,7 @@ p a {
     font-family: 'poppins-semibold';
     font-size: 12px;
     color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    border-radius: 50px;
-    border: 0;
-    background-color: #080809;
     padding: 12px 12px 11px;
-    gap: 5px;
-
 }
 
 .google img,
@@ -751,9 +750,9 @@ p a {
 
 
 
-/*affichage mobile*/
+/*.....affichage ecran reduit et tablette..............*/
 
-@media (max-width: 768px) {
+@media (max-width: 912px) {
 
     html,
     body {
@@ -761,7 +760,46 @@ p a {
         font-size: 14px;
     }
 
+    /*...partie 5...*/
+    
+    .box_formulaire {
+        width: 820px;
+        height: 480px;
+    }
+
+    .formulaire {
+        padding: 30px;
+    }
+    
+    .illustration_formulaire {
+        height: 480px;
+        width: 410px;
+    }
+    
+    .illustration_formulaire img {
+        height: 480px;
+        width: 410px;
+    }
+
+
+    /*..footer..*/
+
+    footer {
+        padding: 4% 5% 2%;
+    }
+    
+    .footer_discover {
+        gap: 35px;
+    }
+    
+}
+
+
+
+@media (max-width: 870px) {
+ 
     /*..Burger menu reduit..*/
+
     ul {
         display: none;
         flex-direction: column;
@@ -778,6 +816,11 @@ p a {
 
     header {
         flex-direction: row-reverse;
+        
+    }
+
+    .logo {
+        padding-left: 0;
     }
 
     .for_web {
@@ -797,21 +840,98 @@ p a {
         display: block;
         position: relative;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 17px;
-        font-weight: 550;
-        padding: 20px 25px;
+        font-size:large;
+        padding: 20px 25px 0 15px;
     }
-
 
     /*affiche le menu au survol*/
 
     .burger:hover+ul,
     ul:hover {
         display: flex;
-
     }
 
-    /*..partie 1 mobile..*/
+
+    /*...partie 5...*/
+    
+    .box_formulaire {
+        width: 660px;
+    }
+
+    .formulaire {
+        padding: 30px;
+    }
+    
+    #name {
+        width: 125px;
+    }
+    
+    #mail {
+        width: 270px;
+    
+    }
+    
+    .illustration_formulaire {
+        width: 330px;
+    }
+    
+    .illustration_formulaire img {
+        width: 330px;
+    }
+
+
+    /*..footer..*/
+
+    footer {
+        align-items: center;
+        margin: auto;
+    }
+    
+    footer article {
+        margin: 35px auto 0;
+    }
+
+    .footer_logo_jadoo {
+        align-items: center;
+        text-align: center;
+    }
+
+    .telecharger {
+        text-align: center;
+    }
+
+    .footer_discover h4 {
+        margin-bottom: 20px;
+    }
+
+    .google {
+        font-size: 12px;
+        padding: 13px 15px 10px;
+        margin-right: 10px;
+    }
+
+    .apple {
+        font-size: 14px;
+        padding: 12px 15px 11px;
+    }
+
+    .google img,
+    .apple img {
+        margin-top: -3px;
+        height: 22px;
+    }
+
+
+    
+}
+
+
+/*.....affichage mobile..............*/
+
+@media (max-width: 656px) {
+
+    /*..partie 1..*/
+
     #part-1 {
         align-items: center;
         text-align: center;
@@ -824,6 +944,7 @@ p a {
 
     h3 {
         font-size: 12px;
+        padding-top: 20px;
     }
 
 
@@ -835,14 +956,14 @@ p a {
 
     section article h5 {
         margin: auto;
-        padding: auto 0;
+        padding-left: 0;
         width: 100%;
     }
 
 
     /*...partie 2...*/
 
-    #part-2 .titre-2 h2 {
+    #part-2 h2 {
         font-size: 24px;
     }
 
@@ -1139,7 +1260,7 @@ p a {
         width: 100%;
     }
 
-    .texte_commande {
+    .box_commande figcaption p {
         font-size: 13px;
     }
 
@@ -1151,7 +1272,7 @@ p a {
     #part-5 {
         text-align: center;
         align-items: center;
-        max-width: 350px;
+        max-width: 300px;
         margin: auto;
 
     }
@@ -1188,7 +1309,7 @@ p a {
 
 
     #mail, #name {
-        width: 315px;
+        width: 300px;
     }
 
     .illustration_formulaire img {
@@ -1196,7 +1317,7 @@ p a {
     }
 
     .box_formulaire {
-        width: 350px;
+        width: 300px;
         margin: auto;
         box-shadow: none;
     }
@@ -1204,20 +1325,12 @@ p a {
     /*..footer..*/
 
     footer {
-        align-items: center;
-        margin: auto;
         background-color: #F3F3F3;
         padding: 0;
 
     }
-    
-    footer article {
-        margin: 35px auto 0;
-    }
 
     .footer_logo_jadoo {
-        align-items: center;
-        text-align: center;
         order: 3;
         width: 100%;
         background-color: #FFFFFF; 
@@ -1237,23 +1350,13 @@ p a {
         margin-left: 10px;
     }
 
-    .telecharger {
-        text-align: center;
-    }
-
-    div article h4 {
-        margin-bottom: 20px;
-    }
-
     .footer_police {
         line-height: 100%;
     }
 
-
     .telecharger figcaption {
         margin-bottom: 20px;
     }
-
 
     .uber2 {
         height: 22px;
@@ -1261,33 +1364,9 @@ p a {
         padding-top: 15px;
     }
 
-    .google {
-        font-size: 12px;
-        padding: 13px 15px 10px;
-        margin-right: 10px;
-    }
-
-    .apple {
-        font-size: 14px;
-        padding: 12px 15px 11px;
-    }
-
-    .google img,
-    .apple img {
-        margin-top: -3px;
-        height: 22px;
-    }
-
     .droits {
         display: none;
         padding: 10px 0;
     }
-
-
-
-
-
-
-
 
 }
