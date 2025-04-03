@@ -27,19 +27,19 @@ header {
     margin-right: 7%;
 }
 
-.logo {
+.header_logo {
     margin-left: 7%;
     padding-top: 10px;
 
 }
 
 
-.logo img:first-child {
+.header_logo img:first-child {
     margin-right: 10px;
     height: 35px;
 }
 
-.logo img:first-child:hover, .logo_jadoo:hover {
+.header_logo img:first-child:hover, .logo_jadoo:hover {
     animation: animation_logo_jadoo 0.5s ease-in;
 }
 
@@ -115,7 +115,7 @@ a:hover::after {
 
 .burger {
     display: none;
-    cursor: pointer;
+    cursor: pointer;  
 }
 
 .for_cell {
@@ -185,7 +185,7 @@ h5 {
 
 }
 
-/*..bouton..*/
+/*..bouton et animations..*/
 .bouton_jaune {
     font-family: Arial, sans-serif;
     font-weight: 700;
@@ -200,7 +200,7 @@ h5 {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-button:hover {
+button:hover, .uber img:hover, .jadoo img:hover, .transport img:hover {
     animation: grow 0.3s forwards;
 }
 
@@ -557,8 +557,6 @@ section .box_commande {
     gap: 15px
 }
 
-
-
 label {
     font-family: 'poppins-regular';
     font-weight: 400;
@@ -571,7 +569,6 @@ label {
 
 #mail {
     width: 350px;
-
 }
 
 input {
@@ -819,7 +816,7 @@ footer div {
         
     }
 
-    .logo {
+    .header_logo {
         padding-left: 0;
     }
 
@@ -836,6 +833,7 @@ footer div {
         padding: 0px 0px 0px 25px;
     }
 
+
     .for_cell {
         display: block;
         position: relative;
@@ -850,7 +848,6 @@ footer div {
     ul:hover {
         display: flex;
     }
-
 
     /*...partie 5...*/
     
