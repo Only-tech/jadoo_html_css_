@@ -113,6 +113,7 @@ a:hover::after {
     width: 100%;
 }
 
+/* ...cache le burger et contact... */
 .burger {
     display: none;
     cursor: pointer;  
@@ -124,15 +125,14 @@ a:hover::after {
 
 
 
-
-
-/*...partie 1...*/
-
+/* ...Toutes les sections.... */
 section {
     transition: all 0.2s ease-in-out;
     position: relative;
     padding: calc(6% + 20px) 7%;
 }
+
+/*...partie 1...*/
 
 #part-1 {
     background: url("../img/images/illustration_principale.jpg") no-repeat;
@@ -241,6 +241,7 @@ button:hover, .uber img:hover, .jadoo img:hover, .transport img:hover {
     padding: 8% 5%;
 }
 
+/*...décoration filet....*/
 .nouveautes:last-child::before {
     content: "";
     position: absolute;
@@ -253,7 +254,7 @@ button:hover, .uber img:hover, .jadoo img:hover, .transport img:hover {
     background-position: 100% 80%;
 }
 
-/*...conteneur...*/
+/*...conteneur nouveautés jadoo...*/
 .box_nouveautes {
     display: flex;
     flex-wrap: wrap;
@@ -290,6 +291,7 @@ button:hover, .uber img:hover, .jadoo img:hover, .transport img:hover {
 
 }
 
+/* ...conteneur carte maki... */
 .box_carte {
     display: flex;
     flex-wrap: wrap;
@@ -314,6 +316,7 @@ button:hover, .uber img:hover, .jadoo img:hover, .transport img:hover {
     width: 182px;
 }
 
+/* ...boîte carte maki.... */
 .carte {
     justify-content: center;
     display: flex;
@@ -329,7 +332,7 @@ button:hover, .uber img:hover, .jadoo img:hover, .transport img:hover {
     box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.05);
 }
 
-
+/*...animation rotation orange...*/
 .animation_maki {
     left: -35px;
     bottom: -35px;
@@ -383,7 +386,7 @@ button:hover, .uber img:hover, .jadoo img:hover, .transport img:hover {
     color: #FFFFFF
 }
 
-
+/*...positionnement des illustrations partie 3...*/
 .illustration {
     display: flex;
     margin-left: -7%;
@@ -427,6 +430,7 @@ section #part-3 {
     margin-bottom: 1%;
 }
 
+/* ...polices.... */
 .commandez h4 {
     font-family: 'poppins-semibold';
     font-size: 18px;
@@ -447,6 +451,21 @@ section #part-3 {
     color: #DF6951;
 }
 
+.box_commande figcaption p:first-child, .box_commande figcaption p a {
+    font-family: 'poppins-bold';
+    font-size: 16px;
+    font-weight: 700;
+    color: #22232C;
+}
+
+.box_commande figcaption p{
+    font-family: 'poppins-regular';
+    font-size: 16px;
+    line-height: 125%;
+    color: #3E3F43;
+}
+
+/* ...conteneur.. */
 .box_commande {
     display: flex;
     flex-direction: column;
@@ -460,6 +479,7 @@ section .box_commande {
     padding: 50px 10px;
 }
 
+/* ...taille logo... */
 .uber img {
     height: 60px;
     width: auto;
@@ -484,19 +504,6 @@ section .box_commande {
 }
 
 
-.box_commande figcaption p:first-child, .box_commande figcaption p a {
-    font-family: 'poppins-bold';
-    font-size: 16px;
-    font-weight: 700;
-    color: #22232C;
-}
-
-.box_commande figcaption p{
-    font-family: 'poppins-regular';
-    font-size: 16px;
-    line-height: 125%;
-    color: #3E3F43;
-}
 
 
 
@@ -541,6 +548,17 @@ section .box_commande {
     margin: 20px 0px;
 }
 
+/* ...conteneur formulaire de contact.... */
+.box_formulaire {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 900px;
+    height: 520px;
+    margin: auto;
+    border-radius: 30px;
+    box-shadow: 2px 4px 32px 5px rgba(0, 0, 0, 0.09);
+}
 
 .formulaire {
     display: inline-block;
@@ -551,12 +569,29 @@ section .box_commande {
 
 }
 
+.illustration_formulaire {
+    height: 520px;
+    width: 450px;
+    float: right;
+    display: flex;
+}
+
+.illustration_formulaire img {
+    text-align: center;
+    align-items: center;
+    height: 520px;
+    width: 450px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+}
 
 .nom_prenom {
     display: flex;
     gap: 15px
 }
 
+/* ....police, marge, taille des champs, bouton d'action..... */
 label {
     font-family: 'poppins-regular';
     font-weight: 400;
@@ -613,33 +648,8 @@ input:focus {
 }
 
 
-.illustration_formulaire {
-    height: 520px;
-    width: 450px;
-    float: right;
-    display: flex;
-}
 
-.illustration_formulaire img {
-    text-align: center;
-    align-items: center;
-    height: 520px;
-    width: 450px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
 
-}
-
-.box_formulaire {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    width: 900px;
-    height: 520px;
-    margin: auto;
-    border-radius: 30px;
-    box-shadow: 2px 4px 32px 5px rgba(0, 0, 0, 0.09);
-}
 
 /*..footer..*/
 
@@ -673,15 +683,16 @@ footer div {
     margin-bottom: 5px;
 }
 
+.footer_logo_jadoo {
+    padding-bottom: 15px;
+}
+
+/* ..polices, marges... */
 .footer_discover h4 {
     font-family: 'poppins-bold';
     font-size: 21px;
     font-weight: 500;
     margin-bottom: 30px;
-}
-
-.footer_logo_jadoo {
-    padding-bottom: 15px;
 }
 
 .footer_police, .footer_police a {
@@ -691,7 +702,6 @@ footer div {
     color: #5E6282;
     margin-top: 15px;
 }
-
 
 .telecharger figcaption {
     font-family: 'poppins-regular';
@@ -711,20 +721,6 @@ footer div {
     padding-top: 5%;
 }
 
-.footer_uber {
-    height: 32px;
-    width: auto;
-}
-
-.google, .apple {
-    display: flex;
-    align-items: center;
-    border-radius: 50px;
-    border: 0;
-    background-color: #080809;   
-    gap: 5px;
-}
-
 .google {
     font-family: 'poppins-extralight';
     color: #BFC0CD;
@@ -739,6 +735,23 @@ footer div {
     color: #FFFFFF;
     padding: 12px 12px 11px;
 }
+
+/* ...taille logo... */
+.footer_uber {
+    height: 32px;
+    width: auto;
+}
+
+.google, .apple {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    border: 0;
+    background-color: #080809;   
+    gap: 5px;
+}
+
+
 
 .google img,
 .apple img {
@@ -796,7 +809,7 @@ footer div {
 @media (max-width: 870px) {
  
     /*..Burger menu reduit..*/
-
+    /* ..liste du menu burger... */
     ul {
         display: none;
         flex-direction: column;
@@ -819,7 +832,8 @@ footer div {
     .header_logo {
         padding-left: 0;
     }
-
+    
+    /* ...cache contactez-nous dans la liste du menu burger... */
     .for_web {
         display: none;
     }
@@ -833,7 +847,7 @@ footer div {
         padding: 0px 0px 0px 25px;
     }
 
-
+    /* ...affiche contact dans le header en affichage tablette et mobile... */
     .for_cell {
         display: block;
         position: relative;
@@ -843,14 +857,13 @@ footer div {
     }
 
     /*affiche le menu au survol*/
-
     .burger:hover+ul,
     ul:hover {
         display: flex;
     }
 
     /*...partie 5...*/
-    
+    /* ...nouvelle largeur du formulaire de contact... */  
     .box_formulaire {
         width: 660px;
     }
@@ -944,7 +957,6 @@ footer div {
         padding-top: 20px;
     }
 
-
     h5 {
         font-size: 15px;
         color: #FFFFFF;
@@ -972,10 +984,12 @@ footer div {
         background: none;
     }
 
+    /* ...cache la décoration filet.... */
     .nouveautes:last-child::before {
         background: none;
     }
 
+    /* ...conteneur nouveautés jadoo.... */
     .box_nouveautes {
         position: relative;
         margin: auto;
@@ -1002,7 +1016,7 @@ footer div {
         font-size: 16px;
     }
 
-    
+    /* ...animation et défilement des nouveautés jadoo.... */
     .box_nouveautes .nouveautes:nth-child(1) {
         animation: animation_nouveautes_1 19.5s 0s infinite;
     }
@@ -1014,10 +1028,6 @@ footer div {
     .box_nouveautes .nouveautes:nth-child(3) {
         animation: animation_nouveautes_3 19.5s 0s infinite;
     }
-
-
-
-    /*défilement des nouveautes*/
 
     @keyframes animation_nouveautes_1 {
         0% {
@@ -1106,8 +1116,7 @@ footer div {
     }
 
 
-
-
+    /* ...conteneur menu maki.... */
     .box_carte {
         display: block;        
         text-align: left;
@@ -1197,6 +1206,7 @@ footer div {
     }
 
 
+    /* ...Illustrations en fond de page... */
     .illustration {
         display: grid;
         margin: 0;
@@ -1291,6 +1301,11 @@ footer div {
         text-align: center;
     }
 
+    .box_formulaire {
+        width: 300px;
+        margin: auto;
+        box-shadow: none;
+    }
 
     .formulaire {
         padding: 0;
@@ -1304,7 +1319,7 @@ footer div {
         gap: 0;
     }
 
-
+    /* ...largeur des champs..... */
     #mail, #name {
         width: 300px;
     }
@@ -1313,11 +1328,7 @@ footer div {
         display: none;
     }
 
-    .box_formulaire {
-        width: 300px;
-        margin: auto;
-        box-shadow: none;
-    }
+
 
     /*..footer..*/
 
@@ -1355,7 +1366,7 @@ footer div {
         margin-bottom: 20px;
     }
 
-    .uber2 {
+    .footer_uber {
         height: 22px;
         width: auto;
         padding-top: 15px;
