@@ -200,7 +200,7 @@ h5 {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-button:hover, .uber img:hover, .jadoo img:hover, .transport img:hover {
+button:hover, .box_commande img:hover, .box_nouveautes article:hover, a:hover, .box_formulaire:hover, input:hover, .illustration img:hover {
     animation: grow 0.3s forwards;
 }
 
